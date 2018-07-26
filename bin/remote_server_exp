@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+set timeout 5
+match_max 100000
+set host [lindex $argv 0]
+set user [lindex $argv 1]
+set pass [lindex $argv 2]
+set path [lindex $argv 3]
+set port [lindex $argv 4]
+set file [lindex $argv 5]
+#spawn $env(SHELL)
+spawn "/bin/bash"
+send -- "scp -o 'StrictHostKeyChecking=no' -P $port $file $user@$host:$path"
+expect -exact "scp -o 'StrictHostKeyChecking=no' -P $port $file $user@$host:$path"
+send -- "\r"
+expect -exact "\r
+$user@$host's password: "
+send -- "$pass\r"
+expect eof

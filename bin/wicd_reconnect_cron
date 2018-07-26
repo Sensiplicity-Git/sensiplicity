@@ -1,0 +1,12 @@
+#!/bin/bash
+if ! ping -c 2 8.8.8.8
+then
+        wicd-cli -cy -n $(wicd-cli -ly | grep OSU_Access | head -1 | cut -f 1)
+fi
+
+sleep 5
+
+if ! ping -c 2 8.8.8.8
+then
+        wicd-cli -cy -n $(wicd-cli -ly | grep OSU_Access | head -1 | cut -f 1)
+fi

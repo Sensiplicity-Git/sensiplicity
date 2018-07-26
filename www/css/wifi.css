@@ -1,0 +1,95 @@
+body {
+        font-family:Arial;
+}
+
+.red {
+	color:red;
+}
+
+.green {
+	color:green;
+}
+
+.network {
+        border:1px solid;
+        padding-top:5px;
+        padding-left:5px;
+}
+
+.tableft {
+        text-align:right;
+        width:50px;
+	display:inline-block;
+}
+
+.wifimenu {
+        float:left;
+        width:30%;
+	height:100%;
+	text-align:center;
+	padding: 0 0 10px 0;
+}
+
+.wificontent {
+        border:1px solid;
+        float:left;
+        width:90%;
+        height:100%;
+	padding:3px;
+}
+
+.wifiheader {
+        float:left;
+        width:99%;
+	text-align:center;
+}
+
+/*textarea {
+        width:699px;
+        height:499px;
+}*/
+
+.footer {
+        text-align:center;
+        width:100%;
+        float:left;
+}
+
+.infoheader {
+	font-size:18px;
+	font-weight:bold;
+	width:100%;
+	text-align:center;
+	margin-top:10px;
+}
+
+.infobox {
+	width:100%;
+}
+
+#intinfo {
+	width:48%;
+	padding-left:10px;
+	border-right:1px solid;
+	float:left;
+}
+
+#wifiinfo {
+	width:100%;
+	padding-left:10px;
+	border:1px solid;
+}
+
+.intheader {
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	width:100%;
+}
+
+.intfooter {
+	width:100%;
+	border-top:1px solid;
+	float:left;
+	text-align:center;
+}
