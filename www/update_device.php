@@ -16,7 +16,7 @@ $value = isset($login_session) ? $login_session : '';
    </td>
    <td><h3> <?php print `/opt/sensiplicity/bin/git_status.sh` ?> </h3></td>
    <td width="10%">
-	<form id="update_device" name="update_device" action="adsfasdfadsfasdfasdfasdf.php" method="get">
+	<form id="update_device" name="update_device" action="set_update.php" method="get">
   	<input type="submit" name='UpdateDevice' value="Update The System Device" />
 	</form>
    </td></tr>
