@@ -46,6 +46,7 @@ if ($result->num_rows > 0) {
 <!-- <tr><td><a href="/dbadmin/" class="Button"><span class="btn"><span class="l"></span><span class="r"></span><span class="t">MySQL Access (Login Required)</span></span></a></td><td></td></tr> -->
 <tr><td><a href="migrate.php" class="Button"><span class="btn"><span class="l"></span><span class="r"></span><span class="t">Migrate Sensor Data</span></span></a></td><td></td></tr>
 <tr><td><a href="reset_sensors.php" class="Button"><span class="btn"><span class="l"></span><span class="r"></span><span class="t">Delete All Sensors / Delete All Data</span></span></a></td><td></td></tr>
+<tr><td><a href="update_device.php" class="Button"><span class="btn"><span class="l"></span><span class="r"></span><span class="t">Update Device with new software</span></span></a></td><td></td></tr>
 <tr><td><a href="reboot.php" class="Button"><span class="btn"><span class="l"></span><span class="r"></span><span class="t">Reboot Sensor System</span></span></a></td><td></td></tr>
 <tr><td><a href="halt.php" class="Button"><span class="btn"><span class="l"></span><span class="r"></span><span class="t">Turn Off Sensor System</span></span></a></td><td></td></tr>
 <tr><td><a href="logout.php" class="Button"><span class="btn"><span class="l"></span><span class="r"></span><span class="t">Logout of Admin Section</span></span></a></td><td></td></tr>
