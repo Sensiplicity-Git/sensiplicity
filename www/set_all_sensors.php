@@ -30,7 +30,7 @@ if ($SetAllOff == "Set All Off") {
 }
 
 if ($SetAllOn == "Set All On") {
-        $sql  = "UPDATE sensors_info SET sensor_state = 'on', sensor_setup = 'yes'";
+        $sql  = "UPDATE sensors_info SET sensor_state = 'on', sensor_setup = 'yes' , sensor_plot = 'on'";
 }
 
 

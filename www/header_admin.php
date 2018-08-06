@@ -42,7 +42,7 @@
         <div class="Header">
           <div class="logo">
               <div id="logo">
-                <img src="images/Sensiplicity_osu_logo.png" width="760" height="120" border="0" usemap="#map" />
+                <img src="images/Sensiplicity_logo_LeftOnly.png" width="760" height="120" border="0" usemap="#map" />
                 <map name="map">
                 <area shape="rect" coords="10,1,355,112" href="/index.php" />
                 <area shape="rect" coords="648,1,753,118" href="http://oregonstate.edu" />

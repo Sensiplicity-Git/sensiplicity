@@ -25,6 +25,7 @@ if ($result->num_rows > 0) {
 }
 
 $date = exec('TZ='.$date_tz.' /bin/date');
+$info = "No problems with this device";
 
 
 $sql = "SELECT * FROM sensors_info WHERE sensor_state = 'on' AND sensor_type = 'Alarm Switch'";
@@ -40,6 +41,7 @@ if ($result->num_rows > 0) {
 	echo '<td>Alarm Sensor Name / ID</td>';
 	echo '<td>Status</td>';
 	echo '<td>State</td>';
+	echo '<td>Information</td>';
 
     while($row = $result->fetch_assoc()) {
 	$file = $row["sensor_id"];
@@ -63,8 +65,9 @@ if ($result->num_rows > 0) {
         	$name  = $row["sensor_name"];
         }
 
-	if ($sensor_error == "error" || $sensor_error == "triggered" ) {
+	if ($sensor_error == "error" || $sensor_error == "triggered" || $sensor_error == "missing") {
 		$state_of_sensor = '<font color="red">Alarm State</font>';
+		$info = "Device is in <font color='red'>".$sensor_error."</font> state";
 	}
 	else {
 		$state_of_sensor = '<font color="green">No Alarms</font>';
@@ -76,6 +79,7 @@ if ($result->num_rows > 0) {
 		<td align="center" valign="middle">'.$name.'</td>
 		<td align="center" valign="middle">'.$status.'</td>
 		<td align="center" valign="middle">'.$state_of_sensor.'</td>
+		<td align="center" valign="middle">'.$info.'</td>
                 </tr>
 	';
 

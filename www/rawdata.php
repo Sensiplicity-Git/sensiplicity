@@ -11,10 +11,10 @@ include('lock.php');
 	<tr>
 	    <td>
         	<table cellpadding=6 cellspacing=0 border=0>
-		<tr><td><li><a href="rawdata_temp.php">Temperature Sensors Raw Data</a></li></td></tr>
-		<tr><td><li><a href="rawdata_humidity.php">Humidity Sensors Raw Data</a></li></td></tr>
-		<tr><td><li><a href="rawdata_soil.php">Soil Sensor System Raw Data</a></li></td></tr>
-		<tr><td><li><a href="rawdata_alarms.php">Alarm Switch / Open-Close Alarm Data</a></li></td></tr>
+		<tr><td><li><a href="rawdata_temp.php">Temperature Sensors Data</a></li></td></tr>
+		<tr><td><li><a href="rawdata_humidity.php">Humidity Sensors Data</a></li></td></tr>
+		<tr><td><li><a href="rawdata_soil.php">Soil Sensor System Data</a></li></td></tr>
+		<tr><td><li><a href="rawdata_alarms.php">Alarm Switch / Open-Close Alarm Status</a></li></td></tr>
         	</table>
             </td>
             <td>
