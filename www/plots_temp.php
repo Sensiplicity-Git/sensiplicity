@@ -305,11 +305,11 @@ if (isset($timeline) && isset($sid)) {
 				}],
 				yAxes: [{
 					display: true,
-					ticks: {
-						beginAtZero: true,
-						suggestedMin: temp_low,
-						suggestedMax: temp_high,
-					},
+                                        ticks: {
+                                                beginAtZero: true,
+                                                suggestedMin: temp_low,
+                                                suggestedMax: temp_high,
+                                        },
 					scaleLabel: {
 						display: true,
 						labelString: "Temperature ("+temp_units+")",

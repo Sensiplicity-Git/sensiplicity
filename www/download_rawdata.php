@@ -50,6 +50,7 @@ foreach ($sensors as $sensor) {
 		continue;
 
 	// Get data from sensor
+
 	if ($sensor["sensor_type"] == "Temperature") {
 		$sensor_id = escapeshellarg($sensor["sensor_id"]);
 		$cmd_output = exec("/opt/sensiplicity/bin/sn-util-rpi temp ".$sensor_id." | tail -n 1");
@@ -60,7 +61,10 @@ foreach ($sensors as $sensor) {
 		if ($temp_units == "F")
 			$temp_value = ($temp_value * (9.0/5.0)) + 32;
 
-		$sensor_name = isset($sensor["sensor_name"]) ? $sensor["sensor_name"] : $sensor["sensor_id"];
+		$sensor_name = $sensor["sensor_id"];
+		if ($sensor["sensor_name"] != "") {
+			$sensor_name = $sensor["sensor_name"];
+		}
 
 		$sensors_data[$sensor_name] = array(
 			"temp" => $temp_value.$temp_units,
@@ -77,7 +81,11 @@ foreach ($sensors as $sensor) {
 		if ($temp_units == "F")
 			$temp_value = ($temp_value * (9.0/5.0)) + 32;
 
-		$sensor_name = isset($sensor["sensor_name"]) ? $sensor["sensor_name"] : $sensor["sensor_id"];
+		$sensor_name = $sensor["sensor_id"];
+		if ($sensor["sensor_name"] != "") {
+			$sensor_name = $sensor["sensor_name"];
+		}
+
 
 		$sensors_data[$sensor_name] = array(
 			"rh"   => $rh_value,
@@ -110,7 +118,11 @@ foreach ($sensors as $sensor) {
 			$zone3_temp_value = ($zone3_temp_value * (9.0/5.0)) + 32;
 		}
 
-		$sensor_name = isset($sensor["sensor_name"]) ? $sensor["sensor_name"] : $sensor["sensor_id"];
+		$sensor_name = $sensor["sensor_id"];
+		if ($sensor["sensor_name"] != "") {
+			$sensor_name = $sensor["sensor_name"];
+		}
+
 
 		$sensors_data[$sensor_name] = array(
 			"amb_temp" => $temp_value.$temp_units,
