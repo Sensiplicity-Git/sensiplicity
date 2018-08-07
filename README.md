@@ -6,7 +6,7 @@ The Sensiplicity tool kit is a set of code which is used for running and managin
 
 DOCUMENTATION
 -------------
-The default branch is now "master" which contains the latest code.
+The default branch, "master," contains the latest code.
 The current latest release is v1.0.0.
 
 ABOUT THE LICENSE
