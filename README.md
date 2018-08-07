@@ -1,8 +1,8 @@
 Sensiplicity
 ============
 
-Sensiplicity: a set of tools for running the Sensiplicity sensor system
-The Sensiplicity tool kit is a set of code which is used for running and managing the Sensiplicity sensor system.
+Sensiplicity: a set of tools for running the Sensiplicity Sensor System
+The Sensiplicity tool kit is a set of code which is used for running and managing the Sensiplicity Sensor System.
 
 DOCUMENTATION
 -------------
