@@ -7,6 +7,8 @@ $value = isset($login_session) ? $login_session : '';
 ?>
 <?php require("header_admin.php"); ?>  
 
+<?php `usr/bin/git remote update`; ?>  
+
 <h3><a href="admin.php">Back To Admin Page</a> </h3>
 <br>
 <br>
