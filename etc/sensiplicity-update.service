@@ -1,0 +1,11 @@
+[Unit]
+Description=Sensiplicity Reboot Update Service
+Before=sensiplicity-alarms.service sensiplicity-lcd.service sensiplicity-sensor.service sensiplicity-wpa.service
+After=network-online.target
+
+[Service]
+ExecStart=/opt/sensiplicity/bin/sensiplicity-update.sh
+
+
+[Install]
+WantedBy=multi-user.target
