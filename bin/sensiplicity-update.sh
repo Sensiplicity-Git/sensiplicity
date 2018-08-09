@@ -14,7 +14,7 @@ then
 	/bin/mv -f /opt/update /opt/sensiplicity
 	#Set sticky bits so that these can be run as root
 	chmod 4755 /opt/sensiplicity/bin/alarm-switch-daemon
-	chmod 4755 /opt/sensiplicity/bin/sn-util-pi
+	chmod 4755 /opt/sensiplicity/bin/sn-util-rpi
 	chmod 4755 /opt/sensiplicity/bin/halt_system
 
 else
