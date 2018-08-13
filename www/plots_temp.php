@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 ?>
 
 <?php
-$_SESSION['curPlot'] = "TEMP_ONLY";
+$_SESSION['curPlot'] = 'TEMP_ONLY';
 $html_name = "";
 $html_id = ""; 
 if ($result->num_rows > 0) {

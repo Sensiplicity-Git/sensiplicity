@@ -1,6 +1,7 @@
 <?php
 include('lock.php');
 ?>
+
 <!-- <meta http-equiv="REFRESH" content="60;url=plots.php"></head> -->
 <script type="text/javascript" src="moment.min.js"></script>
 <script type="text/javascript" src="moment-timezone-with-data.min.js"></script>
