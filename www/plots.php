@@ -3,7 +3,7 @@ include('lock.php');
 ?>
 <?php require("header1.php"); ?>
 <?php require("header2.php"); ?>
-
+<?php session_start();?>
 
 
 
@@ -41,10 +41,11 @@ include('lock.php');
 	</p>
 
 	<?php
-	$varSensor = $_POST['selectSensorType'];
-	if (isset($_POST['curPlot'])) {
-		$varSensor = $_POST['curPlot'];
-	}
+	if (isset($_POST['selectSensorType'])) {
+		$varSensor = $_POST['selectSensorType'];
+	} elseif (isset($_SESSION['curPlot'])) {
+		$varSensor = $_SESSION['curPlot'];
+	} 
 	switch($varSensor) {
 		case "TEMP_ONLY" : include("plots_temp.php"); break;
 		case "TEMP_HUMIDITY" : include("plots_humidity.php"); break;

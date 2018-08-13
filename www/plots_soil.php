@@ -1,7 +1,6 @@
 <?php
 include('lock.php');
 ?>
-
 <!-- <?php require("header1.php"); ?> -->
 <!-- <meta http-equiv="REFRESH" content="60;url=plots.php"></head> -->
 <script type="text/javascript" src="moment.min.js"></script>
@@ -25,7 +24,7 @@ $result = $conn->query($sql);
 ?>
 
 <?php
-$_POST['curPlot'] = 'SOIL';
+$_SESSION['curPlot'] = 'SOIL';
 $html_id = "";
 $html_name = "";
 if ($result->num_rows > 0) {
