@@ -25,7 +25,7 @@ $result = $conn->query($sql);
 ?>
 
 <?php
-
+$_POST['curPlot'] = 'SOIL';
 $html_id = "";
 $html_name = "";
 if ($result->num_rows > 0) {

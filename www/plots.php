@@ -41,15 +41,16 @@ include('lock.php');
 	</p>
 
 	<?php
-	if(isset($_POST)) {
 	$varSensor = $_POST['selectSensorType'];
-		switch($varSensor) {
-			case "TEMP_ONLY" : include("plots_temp.php"); break;
-			case "TEMP_HUMIDITY" : include("plots_humidity.php"); break;
-			case "SOIL" : include("plots_soil.php"); break;
-			default: echo("No selection"); break;
-			//default: include("plots_soil.php"); break; //Testing to make sure the plots could be included
-		}
+	if (isset($_POST['curPlot']) {
+		$varSensor = $_POST['curPlot'];
+	}
+	switch($varSensor) {
+		case "TEMP_ONLY" : include("plots_temp.php"); break;
+		case "TEMP_HUMIDITY" : include("plots_humidity.php"); break;
+		case "SOIL" : include("plots_soil.php"); break;
+		default: echo("No selection"); break;
+		//default: include("plots_soil.php"); break; //Testing to make sure the plots could be included
 	}
 	?>
 	
