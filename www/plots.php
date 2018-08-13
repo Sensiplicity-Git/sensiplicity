@@ -42,7 +42,7 @@ include('lock.php');
 
 	<?php
 	$varSensor = $_POST['selectSensorType'];
-	if (isset($_POST['curPlot']) {
+	if (isset($_POST['curPlot'])) {
 		$varSensor = $_POST['curPlot'];
 	}
 	switch($varSensor) {
