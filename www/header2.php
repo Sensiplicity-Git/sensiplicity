@@ -47,7 +47,7 @@
           <div class="l"></div>
             <div class="r"></div>
               <ul class="artmenu"><li class="leaf first"><a href="/plots.php" title=""><span class="l"></span><span class="r"></span><span class="t">Sensor Plots</span></a></li>
-<li class="leaf"><a href="/rawdata.php" ><span class="l"></span><span class="r"></span><span class="t">Raw Data</span></a></li>
+<li class="leaf"><a href="/rawdata.php" ><span class="l"></span><span class="r"></span><span class="t">Status</span></a></li>
 <li class="collapsed"><a href="/download.php" title="Data Download"><span class="l"></span><span class="r"></span><span class="t">Download Data</span></a></li>
 <li class="collapsed"><a href="/about.php" title="Learn More"><span class="l"></span><span class="r"></span><span class="t">About System</span></a></li>
 <?php

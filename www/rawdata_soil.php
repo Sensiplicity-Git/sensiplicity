@@ -1,11 +1,12 @@
 <?php
 include('lock.php');
 ?>
+<!--
 <?php require("header1.php"); ?>
 <meta http-equiv="REFRESH" content="120;url=rawdata_soil.php"></head>
 <?php require("header2.php"); ?>
 <?php require("header3.php"); ?>
-
+-->
 
 <?php
 // Create connection
@@ -51,7 +52,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
 
-	echo '<h3><a href="/rawdata.php">Back To Raw Data Page</a> | <a href="/rawdata_soil.php">Refresh This Page</a> </h3>';
+	echo '<h3><a href="/rawdata.php">Refresh This Page</a> </h3>';
 	#echo '<center><h4>'; 
 	echo '<h5>';
 	echo '<table border=1 cellpadding=2>';
