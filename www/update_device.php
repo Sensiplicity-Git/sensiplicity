@@ -14,13 +14,18 @@ $value = isset($login_session) ? $login_session : '';
 <br>
 <br>
   <table align="center" border=1 cellpadding='5' cellspacing='5'>
-   <tr><td width="90%">
+   <tr><td width="70%">
 	<h2>Update Status:</h2>
+	<h4>If the system needs to be updated the button to the right will become active. You can click the button and the system will pull the update from online after which you will need to reboot the system. Since the data is located online the device needs to be connected to the network to be updated.</h4>
    </td>
-   <td><h3> <?php print `/opt/sensiplicity/bin/git_status.sh` ?> </h3></td>
+   <td width="20%"><h3> <?php print `/opt/sensiplicity/bin/git_status.sh` ?> </h3></td>
    <td width="10%">
 	<form id="update_device" name="update_device" action="set_update.php" method="get">
+<<<<<<< HEAD
+	<input <?php if ($status != "Up-to-date\n") { echo " disabled='disabled'";}  ?> type="submit" name='UpdateDevice' value='Up date The System Device' />
+=======
 	<input <?php if ($status == "Up-to-date\n") { echo " disabled='disabled'";}  ?> type="submit"name='UpdateDevice' value='Up date The System Device' />
+>>>>>>> 52319ad8702ebe30bd47d7615ab07f3665dc6ea7
 
 	   </form>
    </td></tr>
