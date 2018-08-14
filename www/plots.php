@@ -9,22 +9,6 @@ include('lock.php');
 
     <center>
 
-        <h3>
-        <table cellpadding=6 cellspacing=0 border=0>
-	<tr>
-	    <td>
-        	<table cellpadding=6 cellspacing=0 border=0>
-		<tr><td><li><a href="plots_temp.php">Temperature Sensor Plots</a></li></td></tr>
-		<tr><td><li><a href="plots_humidity.php">Temperature/Humidity Sensor Plots</a></li></td></tr>
-		<tr><td><li><a href="plots_soil.php">Soil Sensor Plots</a></li></td></tr>
-        	</table>
-            </td>
-            <td>
-    		<img height=200 src="/images/sensiplicity_640hight.png"></a>
-            </td>
-        </tr>
-        </table>
-        </h3>
 	
 	<p>
 	<h2>
@@ -50,11 +34,9 @@ include('lock.php');
 		case "TEMP_ONLY" : include("plots_temp.php"); break;
 		case "TEMP_HUMIDITY" : include("plots_humidity.php"); break;
 		case "SOIL" : include("plots_soil.php"); break;
-		default: echo("No selection"); break;
-		//default: include("plots_soil.php"); break; //Testing to make sure the plots could be included
+		default: echo("No selection"); require("footer.php"); break;
 	}
 	?>
 	
    </center>
 
-<?php require("footer.php"); ?>
