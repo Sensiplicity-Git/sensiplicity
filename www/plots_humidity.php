@@ -31,7 +31,7 @@ $html_id = "";
 $html_name = "";
 if ($result->num_rows > 0) {
 
-	echo '<form name="PlotForm" method="GET" action="/plots.php">'."\n";
+	echo '<form name="PlotForm" method="GET" action="plots.php">'."\n";
 	echo '<B>Sensor:</B>&nbsp;&nbsp;'."\n";
 	echo '<SELECT NAME="SensorID" >'."\n";
 

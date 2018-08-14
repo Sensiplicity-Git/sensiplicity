@@ -10,7 +10,7 @@
 
 <?php `sudo sh -c 'echo "1" > ../update_set.up'`; ?>
 
-<?php echo `sudo git clone https://github.com/Sensiplicity-Git/sensiplicity.git /opt/update`; ?>
+<?php echo `sudo git clone https://github.com/Sensiplicity-Git/sensiplicity.git /opt/update/new`; ?>
 
 <h3><a href="admin.php">Back To Admin Page</a> </h3>
 <br>
