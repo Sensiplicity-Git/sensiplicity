@@ -2,13 +2,15 @@
 include('lock.php');
 ?>
 
-<?php require("header1.php"); ?>  
+<!-- <?php require("header1.php"); ?>  -->
 <!-- <meta http-equiv="REFRESH" content="60;url=plots.php"></head> -->
 <script type="text/javascript" src="moment.min.js"></script>
 <script type="text/javascript" src="moment-timezone-with-data.min.js"></script>
 <script type="text/javascript" src="Chart.min.js"></script>
+<!--
 <?php require("header2.php"); ?>  
 <?php require("header3.php"); ?>
+-->
 
 <?php
 // Create connection
@@ -24,12 +26,12 @@ $result = $conn->query($sql);
 ?>
 
 <?php
-
+$_SESSION['curPlot'] = 'TEMP_HUMIDITY';
 $html_id = "";
 $html_name = "";
 if ($result->num_rows > 0) {
 
-	echo '<form name="PlotForm" method="GET" action="/plots_humidity.php">'."\n";
+	echo '<form name="PlotForm" method="GET" action="/plots.php">'."\n";
 	echo '<B>Sensor:</B>&nbsp;&nbsp;'."\n";
 	echo '<SELECT NAME="SensorID" >'."\n";
 
