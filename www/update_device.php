@@ -21,7 +21,7 @@ $value = isset($login_session) ? $login_session : '';
    <td width="10%"><h3> <?php print `/opt/sensiplicity/bin/git_status.sh` ?> </h3></td>
    <td width="10%">
 	<form id="update_device" name="update_device" action="set_update.php" method="get">
-	<input <?php if ($status != "Up-to-date\n") { echo " disabled='disabled'";}  ?> type="submit" name='UpdateDevice' value='Up date The System Device' />
+	<input <?php if ($status == "Up-to-date\n") { echo " disabled='disabled'";}  ?> type="submit" name='UpdateDevice' value='Up date The System Device' />
 	   </form>
    </td></tr>
   </table>
