@@ -54,7 +54,7 @@ include('lock.php');
         <TD>SS-L1</TD>
 	<TD bgcolor="#454C43" width=2>&nbsp;</TD>
         <TD align="right" valign="middle">Software Version:</TD>
-        <TD> system("cat /opt/sensiplicity/VERSION") ?></TD>
+        <TD> <?php system("cat /opt/sensiplicity/VERSION") ?></TD>
         </TR>
 
         <TR>
