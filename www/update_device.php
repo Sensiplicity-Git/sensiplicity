@@ -17,12 +17,12 @@ if($fp = fsockopen($host,$port,$errCode,$errStr,$waitTimeoutInSeconds)){
    `sudo /usr/bin/git remote update`; 
    $git_status = shell_exec('/opt/sensiplicity/bin/git_status.sh');
    if ($git_status == "Up-to-date\n") {
-   	$status = "<font color='green'>".$git_status."</font>"
+   	$status = "<font color='green'>".$git_status."</font>";
    } else {
-   	$status = "<font color='red'>".$git_status."</font>"
+   	$status = "<font color='red'>".$git_status."</font>";
    }
 } else {
-   $status = "<font color='red'>System is not Online!</font>"
+   $status = "<font color='red'>System is not Online!</font>";
 }
 fclose($fp);
 ?>
